@@ -1,0 +1,66 @@
+.header {
+  position: relative;
+  padding-top: 61px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__list {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    li {
+      padding-top: 12px;
+      list-style-type: none;
+      font-weight: 400;
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 169px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__order {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &__text {
+    padding-top: 12px;
+    color: #333;
+    font-weight: 400;
+    a {
+      position: relative;
+      text-decoration: none;
+      color: #333;
+    }
+    ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -28px;
+      background-image: url("../icons/icon_bag.svg");
+      background-size: cover;
+      width: 16px;
+      height: 19px;
+      display: inline-block;
+    }
+  }
+  &__button {
+    :hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

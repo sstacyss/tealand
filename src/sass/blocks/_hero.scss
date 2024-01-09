@@ -1,0 +1,20 @@
+.hero {
+  min-height: 100%;
+  background: url(../img/first_screen_img.svg) no-repeat;
+  background-size: cover;
+  &__headline {
+    padding-top: 168px;
+  }
+  &__title {
+    padding-top: 27px;
+    max-width: 781px;
+  }
+  &__subtitle {
+    padding-top: 27px;
+    max-width: 536px;
+  }
+  &__button {
+    margin-top: 49px;
+    margin-bottom: 238px;
+  }
+}

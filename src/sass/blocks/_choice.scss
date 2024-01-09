@@ -1,0 +1,35 @@
+.choice {
+  background: linear-gradient(
+      rgba(245, 238, 232, 0.5),
+      rgba(245, 238, 232, 0.5)
+    ),
+    url(../img/background.svg) 50% / cover no-repeat;
+  &__headline {
+    text-align: center;
+  }
+  &__title {
+    text-align: center;
+    padding-top: 27px;
+  }
+  &__subtitle {
+    text-align: center;
+    padding-top: 30px;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    padding-top: 40px;
+    max-width: 1084px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+  }
+}

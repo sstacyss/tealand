@@ -1,0 +1,99 @@
+.gallery {
+  background: linear-gradient(
+      rgba(245, 238, 232, 0.5),
+      rgba(245, 238, 232, 0.5)
+    ),
+    url(../img/background.svg) 50% / cover no-repeat;
+  &__top {
+    padding-top: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__title {
+    padding-top: 28px;
+  }
+  &__button {
+    margin-top: 36px;
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+  &__img-top {
+    position: relative;
+    padding-top: 51px;
+    max-width: 900px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__decoration-item-1 {
+    max-width: 357px;
+    position: absolute;
+    top: -74px;
+    right: -162px;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__decoration-item-2 {
+    max-width: 357px;
+    position: absolute;
+    bottom: -205px;
+    left: -85px;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__decoration-item-3 {
+    max-width: 357px;
+    position: absolute;
+    bottom: -120px;
+    left: -65px;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__decoration-item-4 {
+    max-width: 357px;
+    position: absolute;
+    top: -132px;
+    right: -660px;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__img-bottom {
+    position: relative;
+    padding-top: 43px;
+    max-width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 86px;
+    z-index: 4;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.benefits {
+  background: linear-gradient(
+      rgba(245, 238, 232, 0.5),
+      rgba(245, 238, 232, 0.5)
+    ),
+    url(../img/background.svg) 50% / cover no-repeat;
+  position: relative;
+  &__title {
+    padding-top: 93px;
+    max-width: 715px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  &__wrapper {
+    padding-top: 83px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 155px;
+  }
+  &__img {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    max-width: 324px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    max-width: 455px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  &__descr {
+    font-weight: 300;
+  }
+  &__decoration {
+    max-width: 286px;
+    position: absolute;
+    top: 534px;
+    right: 0;
+    z-index: 3;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}

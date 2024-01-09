@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 24px;
+  background: $main-color;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  :hover {
+    color: #fff;
+    text-decoration: none;
+  }
+}

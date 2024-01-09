@@ -1,0 +1,41 @@
+.advantages {
+  background: linear-gradient(
+      rgba(245, 238, 232, 0.5),
+      rgba(245, 238, 232, 0.5)
+    ),
+    url(../img/background.svg) 50% / cover no-repeat;
+  //   background: url(../img/background.svg) #f5eee8 50% / cover no-repeat;
+  //   background-color: #f5eee8;
+  &__wrapper {
+    padding-top: 91px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+  }
+  &__img {
+    max-width: 719px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__headline {
+    padding-top: 53px;
+  }
+  &__title {
+    padding-top: 27px;
+    max-width: 525px;
+  }
+  &__subtitle {
+    padding-top: 36px;
+    max-width: 536px;
+  }
+  &__button {
+    margin-top: 36px;
+    a {
+      color: #fff;
+    }
+  }
+}

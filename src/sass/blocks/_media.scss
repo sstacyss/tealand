@@ -1,0 +1,18 @@
+@media (min-width: 1600px) {
+}
+
+// Большие настольные экраны
+// @media (min-width: 1200px) and (max-width: 1599px) {
+// }
+
+// Ноутбуки и средние настольные экраны
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+// Планшеты
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+// Мобильные устройства и маленькие планшеты (максимальный подход)
+@media (max-width: 767px) {
+}
