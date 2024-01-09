@@ -2,7 +2,6 @@ $(document).ready(function () {
   // Общие настройки для всех слайдеров
   const commonSettings = {
     infinite: true,
-    autoplay: true,
     arrows: true,
   };
 
@@ -13,6 +12,7 @@ $(document).ready(function () {
         '<button type="button" class="slick-prev"><img src="icons/arrow_previous.svg"></button>',
       nextArrow:
         '<button type="button" class="slick-next"><img src="icons/arrow_next.svg"></button>',
+      autoplay: true,
       speed: 3500,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -24,6 +24,7 @@ $(document).ready(function () {
   // Инициализация второго слайдера
   $(".multiple-carousel").slick(
     $.extend({}, commonSettings, {
+      autoplay: false,
       speed: 8000,
       slidesToShow: 6,
       slidesToScroll: 2,

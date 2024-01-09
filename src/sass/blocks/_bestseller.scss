@@ -28,10 +28,11 @@
     grid-template-columns: 1fr 1fr;
   }
   &__img {
-    max-width: 1050px;
+    min-width: 1050px;
     position: absolute;
     top: -238px;
-    left: 15%;
+    left: 50%;
+    transform: translateX(-50%);
     img {
       width: 100%;
       height: auto;
