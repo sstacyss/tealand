@@ -1,6 +1,7 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/slick.scss";
 @import "libs/slick-theme.scss";
+@import "libs/animate-css.min";
 
 @import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Roboto:wght@300;400;500&display=swap");
 
@@ -14,14 +15,37 @@
 }
 
 .container {
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 0 1%;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  svg {
+    transition: fill 0.8s;
+  }
+  &:hover svg path {
+    fill: #7d806aba;
+  }
 }
 
 @import "blocks/button";
 @import "blocks/titles";
 @import "blocks/hero";
 @import "blocks/header";
+@import "blocks/header-mobile";
 @import "blocks/advantages";
 @import "blocks/choice";
 @import "blocks/tea-carousel";
@@ -30,3 +54,5 @@
 @import "blocks/bestseller";
 @import "blocks/gallery";
 @import "blocks/photos";
+@import "blocks/footer";
+@import "blocks/media";

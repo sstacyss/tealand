@@ -1,0 +1,94 @@
+.footer {
+  background-color: $light-green;
+  &__wrapper {
+    padding-top: 70px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  &__social {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  &__logo {
+    max-width: 198px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+  &__icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 39px;
+  }
+  &__icon {
+    max-width: 24px;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
+    svg {
+      transition: fill 0.8s;
+    }
+    &:hover svg path {
+      fill: #7d806aba;
+    }
+  }
+  &__opening,
+  &__contacts {
+    padding-top: 40px;
+  }
+  &__contacts {
+    position: relative;
+    padding-left: 133px;
+    padding-right: 125px;
+    border-right: 1px solid $main-color;
+  }
+  &__opening {
+    position: relative;
+    padding-left: 133px;
+    padding-right: 120px;
+    height: 100%;
+    border-left: 1px solid $main-color;
+  }
+  &__title,
+  &__hours {
+    font-family: Philosopher;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #333;
+  }
+  &__phone,
+  &__email,
+  &__address,
+  &__text {
+    padding-top: 10px;
+    text-transform: capitalize;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+  &__copyright {
+    padding-top: 71px;
+    padding-bottom: 31px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #333;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

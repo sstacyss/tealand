@@ -1,7 +1,6 @@
 .hero {
   min-height: 100%;
-  background: url(../img/first_screen_img.svg) no-repeat;
-  background-size: cover;
+  background: url(../img/background_1.png) bottom right/cover fixed no-repeat;
   &__headline {
     padding-top: 168px;
   }

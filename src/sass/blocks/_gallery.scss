@@ -33,9 +33,14 @@
     padding-top: 51px;
     flex: 0 0 60.698%;
     width: 60.698%;
+    transition: opacity 0.3s ease;
+    opacity: 1;
     z-index: 4;
     img {
       max-width: 100%;
+    }
+    &:hover {
+      opacity: 0.9;
     }
   }
   &__decoration-item-1 {
@@ -78,7 +83,7 @@
     max-width: 357px;
     position: absolute;
     top: -190px;
-    right: -60px;
+    right: -10px;
     z-index: -1;
     img {
       width: 100%;
@@ -95,15 +100,25 @@
   }
   &__img-landscape {
     flex: 0 1 56%;
+    transition: opacity 0.3s ease;
+    opacity: 1;
     img {
       max-width: 100%;
+    }
+    &:hover {
+      opacity: 0.9;
     }
   }
 
   &__img-portrait {
     flex: 0 1 29.24%;
+    transition: opacity 0.3s ease;
+    opacity: 1;
     img {
       max-width: 100%;
+    }
+    &:hover {
+      opacity: 0.9;
     }
   }
 }

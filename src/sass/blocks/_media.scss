@@ -7,12 +7,455 @@
 
 // Ноутбуки и средние настольные экраны
 @media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    padding: 0 4%;
+  }
+  .advantages {
+    &__wrapper {
+      align-items: end;
+      gap: 50px;
+    }
+  }
+  .choice {
+    &__icon {
+      max-width: 100px;
+    }
+  }
+  .menu {
+    &__decoration {
+      max-width: 257px;
+    }
+    &__wrapper {
+      align-items: end;
+    }
+  }
+  .benefits {
+    &__img {
+      max-width: 240px;
+    }
+  }
+  .bestseller {
+    &__wrapper {
+      top: 320px;
+    }
+    &__img {
+      bottom: -95px;
+    }
+  }
+  .gallery {
+    &__top {
+      padding-top: 40px;
+    }
+    &__decoration-item-4 {
+      right: -40px;
+    }
+  }
+  .footer {
+    &__contacts {
+      border-right: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__opening {
+      border-left: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__address {
+      max-width: 200px;
+    }
+  }
 }
 
 // Планшеты
 @media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    padding: 0 4%;
+  }
+  .title-big {
+    font-size: 3.75rem;
+  }
+  .title-small {
+    font-size: 1.425rem;
+  }
+  .header {
+    &__list {
+      display: none;
+    }
+    &__order {
+      display: none;
+    }
+    &__logo {
+      max-width: 139px;
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+  .hero {
+    &__button {
+      margin-bottom: 138px;
+    }
+  }
+  .advantages {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 50px;
+      .advantages__content:nth-child(2) {
+        order: 1;
+      }
+      .advantages__img:first-of-type {
+        order: 2;
+      }
+    }
+    &__img {
+      max-width: 619px;
+    }
+  }
+  .choice {
+    &__icon {
+      max-width: 80px;
+    }
+  }
+  .tea-carousel {
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  .menu {
+    &__decoration {
+      max-width: 220px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    &__headline,
+    &__title {
+      text-align: center;
+    }
+    &__img {
+      max-width: 548px;
+    }
+    &__items {
+      gap: 30px;
+    }
+    &__item {
+      gap: 210px;
+    }
+    &__divider {
+      width: 290px;
+    }
+  }
+  .benefits {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 50px;
+    }
+    &__img {
+      max-width: 240px;
+      justify-content: center;
+    }
+    &__decoration {
+      max-width: 186px;
+    }
+  }
+  .bestseller {
+    &__wrapper {
+      top: 320px;
+    }
+    &__img {
+      max-width: 500px;
+      bottom: -25px;
+    }
+    &__name {
+      font-size: 0.975rem;
+    }
+    &__icon {
+      max-width: 57px;
+    }
+  }
+  .gallery {
+    &__top {
+      padding-top: 40px;
+      align-items: center;
+    }
+    &__title {
+      max-width: 500px;
+    }
+    &__decoration-item-1 {
+      max-width: 315px;
+    }
+    &__decoration-item-2 {
+      max-width: 315px;
+    }
+    &__decoration-item-3 {
+      max-width: 315px;
+    }
+    &__decoration-item-4 {
+      max-width: 315px;
+      top: -165px;
+      right: -10px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      gap: 20px;
+    }
+    .footer__social {
+      grid-column: 1 / -1;
+      order: -1;
+    }
+    &__contacts {
+      border-right: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__opening {
+      border-left: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__address {
+      max-width: 200px;
+    }
+  }
 }
 
 // Мобильные устройства и маленькие планшеты (максимальный подход)
 @media (max-width: 767px) {
+  .container {
+    padding: 0 5%;
+  }
+  .title-big {
+    font-size: 2.75rem;
+  }
+  .title-medium {
+    font-size: 2.575rem;
+  }
+  .title-small {
+    font-size: 1.425rem;
+  }
+  .header {
+    &__list {
+      display: none;
+    }
+    &__order {
+      display: none;
+    }
+    &__logo {
+      max-width: 139px;
+    }
+
+    &__burger {
+      display: flex;
+    }
+  }
+  .hero {
+    background: url(../img/background_1.png) 80% center/cover no-repeat;
+    background-attachment: scroll;
+    &__main {
+      text-align: center;
+    }
+
+    &__button {
+      margin-bottom: 138px;
+    }
+  }
+  .advantages {
+    &__wrapper {
+      padding-top: 61px;
+      grid-template-columns: 1fr;
+      gap: 50px;
+      .advantages__content:nth-child(2) {
+        order: 1;
+      }
+      .advantages__img:first-of-type {
+        order: 2;
+      }
+    }
+    &__content {
+      text-align: center;
+    }
+  }
+  .choice {
+    &__wrapper {
+      flex-direction: column;
+      gap: 50px;
+    }
+    &__icon {
+      max-width: 80px;
+    }
+  }
+  .tea-carousel {
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  .menu {
+    &__decoration {
+      display: none;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+    &__headline,
+    &__title {
+      text-align: center;
+    }
+    &__img {
+      max-width: 360px;
+    }
+    &__items {
+      gap: 30px;
+    }
+    &__item {
+      gap: 55px;
+    }
+    &__divider {
+      width: 140px;
+    }
+  }
+  .benefits {
+    &__title {
+      max-width: 530px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 50px;
+    }
+    &__img {
+      max-width: 150px;
+      justify-content: center;
+      gap: 15px;
+    }
+    &__decoration {
+      display: none;
+    }
+    &__item {
+      text-align: center;
+    }
+    &__content {
+      max-width: 400px;
+    }
+  }
+  .bestseller {
+    &__title {
+      max-width: 470px;
+      padding-bottom: 50px;
+    }
+    &__wrapper {
+      position: static;
+      max-width: 450px;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+    }
+    &__img {
+      display: none;
+    }
+    &__right {
+      padding: 40px 10%;
+      justify-items: end;
+      justify-content: center;
+      gap: 40px;
+    }
+    &__left {
+      padding: 40px 10%;
+      justify-content: center;
+      gap: 40px;
+    }
+    &__name {
+      font-size: 0.975rem;
+    }
+    &__icon {
+      max-width: 57px;
+    }
+  }
+  .gallery {
+    &__top {
+      padding-top: 100px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__wrapper {
+      align-items: center;
+    }
+    &__img-top {
+      max-width: 503px;
+      width: 100%;
+    }
+    &__img-bottom {
+      flex-direction: column;
+      gap: 35px;
+    }
+    &__img-landscape {
+      max-width: 503px;
+    }
+    &__text {
+      text-align: center;
+    }
+    &__title {
+      max-width: 500px;
+    }
+    &__decoration-item-1,
+    &__decoration-item-2,
+    &__decoration-item-3,
+    &__decoration-item-4 {
+      display: none;
+    }
+  }
+  .photos {
+    &__carousel {
+      padding-top: 50px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .footer__social {
+      grid-column: 1 / -1;
+      order: -1;
+    }
+    &__contacts {
+      border-right: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__social {
+      gap: 50px;
+    }
+    &__logo {
+      max-width: 158px;
+    }
+    &__opening {
+      border-left: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__address {
+      max-width: 200px;
+    }
+    &__copyright {
+      padding-top: 51px;
+    }
+  }
+  .pageup {
+    display: none !important;
+  }
 }
