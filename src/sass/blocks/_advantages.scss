@@ -36,6 +36,9 @@
     margin-top: 36px;
     a {
       color: #fff;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

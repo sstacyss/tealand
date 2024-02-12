@@ -1,11 +1,21 @@
+// BURGER-MENU
+
+document.addEventListener("DOMContentLoaded", function () {
+  var burger = document.querySelector(".header__burger");
+  var mobileMenu = document.querySelector(".header__menu-mobile");
+
+  burger.addEventListener("click", function () {
+    this.classList.toggle("open");
+    mobileMenu.classList.toggle("show");
+  });
+});
+
 $(document).ready(function () {
-  // Общие настройки для всех слайдеров
   const commonSettings = {
     infinite: true,
     arrows: true,
   };
 
-  // Инициализация первого слайдера
   $(".slick-carousel").slick(
     $.extend({}, commonSettings, {
       prevArrow:
@@ -18,10 +28,36 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplaySpeed: 3500,
       cssEase: "linear",
+
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+          },
+        },
+      ],
     })
   );
 
-  // Инициализация второго слайдера
   $(".multiple-carousel").slick(
     $.extend({}, commonSettings, {
       autoplay: false,
@@ -30,34 +66,47 @@ $(document).ready(function () {
       slidesToScroll: 2,
       autoplaySpeed: 0,
       cssEase: "linear",
+
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     })
   );
 });
 
-// $(document).ready(function () {
-//   $(".slick-carousel").slick({
-//     prevArrow:
-//       '<button type="button" class="slick-prev"><img src="icons/arrow_previous.svg"></button>',
-//     nextArrow:
-//       '<button type="button" class="slick-next"><img src="icons/arrow_next.svg"></button>',
-//     infinite: true,
-//     autoplay: true,
-//     speed: 500,
-//     slidesToShow: 4,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     autoplaySpeed: 2500,
-//   });
-// });
+// SMOOTH SCROLL AND PAGE UP
 
-// $(document).ready(function () {
-//   $(".multiple-carousel").slick({
-//     infinite: true,
-//     autoplay: true,
-//     speed: 8000,
-//     slidesToShow: 6,
-//     slidesToScroll: 2,
-//     autoplaySpeed: 0,
-//     cssEase: "linear",
-//   });
-// });
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 1600) {
+    $(".pageup").fadeIn();
+  } else {
+    $(".pageup").fadeOut();
+  }
+});
+$("a[href='#up']").click(function () {
+  $("html, body").animate({ scrollTop: 0 }, 900);
+  return false;
+});
+new WOW({
+  offset: 100,
+}).init();
